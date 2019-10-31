@@ -1,22 +1,48 @@
 
-nav{color: rgb(626568);
-text-transform: uppercase;
-font-size: 14px;
-text-indent: 30px;
-}
-/* line-height */
-.link:hover {color: red;}
 body{
-    color: rgb(62, 62, 62);
+    color: #626262;
     font-size: 14px;
+    line-height: 24px;
     font-family: 'Playfair Display', serif;
     font-style: regular;
 }
+
+.main-menu
+{text-transform: uppercase;
+text-indent: 30px;
+list-style: none;
+line-height: 17px;
+}
+.main-menu a
+{color: #626262;
+    text-decoration: none;
+ }
+.main-menu a:hover {color:#80d3f8;}
+
 .title {font-style: light;
     font-family: 'Ubuntu', sans-serif;
-text-transform: uppercase;}
+text-transform: uppercase;
+font-style: light;
+}
+.article-list {list-style: none;}
+.article-list h3{font-size: 30px;
+    line-height: 36px;}
+
 .box {background-color: sienna;
     height: 110px;
     width: 71px;
 }
-h3{font-size: 30px;}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="ratio"].visually-hidden {
+
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0px;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
