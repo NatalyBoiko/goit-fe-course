@@ -1,3 +1,9 @@
+html{
+    box-siizing:border-box;
+}
+*,
+*::before,
+::after{box-sizing: inherit}
 
 body{
     color: #626262;
@@ -7,31 +13,82 @@ body{
     font-style: regular;
 }
 
+img{display: block;
+max-width: 100%;
+height: auto;}
+
+.container {width: 900px;
+    background-color: lightcoral;
+/*-- цвет потом нужно убрать--*/
+margin: 0 auto;}
+/* сюда можно будет вставить параметризацию- (сделать по высоте контента).site-logo{display: inline-block:} */
+
+/*.page-header {margin-bottom: 92 px;*/
 .main-menu
 {text-transform: uppercase;
-text-indent: 30px;
 list-style: none;
 line-height: 17px;
+display: inline-block;
+text-align: center;
+border: 0;
 }
-.main-menu a
-{color: #626262;
+.main-menu li{display: inline-block;}
+.main-menu li:not(:last-child){
+margin-right: 60px;}
+
+
+.main-menu a{color: #626262;
     text-decoration: none;
+    display: block;
  }
-.main-menu a:hover {color:#80d3f8;}
+.main-menu a:hover 
+.main-menu a: :focus {color:#80d3f8;}
+
 
 .title {font-style: light;
     font-family: 'Ubuntu', sans-serif;
 text-transform: uppercase;
 font-style: light;
 }
-.article-list {list-style: none;}
-.article-list h3{font-size: 30px;
-    line-height: 36px;}
+.title p 
+{margin-bottom: 28px;
+margin-top: 28px;}
 
-.box {background-color: sienna;
-    height: 110px;
-    width: 71px;
-}
+.article-list {list-style: none;
+margin: 0;
+padding: 0;
+font-size: 0px;}
+.article-list h3{font-size: 30px;
+    line-height: 36px;
+margin-bottom: 32px;/*замер по макету 40 пх-лайн хайт h3(36-30)/2- line-height article(24-14)/2 */}
+
+    .article-list-item {
+        display: inline-block;
+        width: 421px;
+        font-size: 14px;
+    margin-right: 27px; 
+    /*тут должнобыть 30 пикселей, но 30 пикселей 
+    рвет - не помещается потому что картинки не обрезаны и 
+    эйджент-юзер маржины на страницу выставил авто параметры */
+    text-alight: right;
+    padding: 10;
+    }
+    .article-list-item: nth-child(2n) {margin-right: 0;}
+
+    .download-bottom {text-align: center;
+        background-position: center;
+        border: none;
+        margin: 0;
+        padding: 16px 30px;
+        /*min-width: 152px;
+        height: 68px;*/
+        background-color: aqua;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }  /*не центрируется - не знаю, почему*/
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="ratio"].visually-hidden {
