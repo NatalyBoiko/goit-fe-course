@@ -1,3 +1,4 @@
+
 html{
     box-siizing:border-box;
 }
@@ -13,81 +14,88 @@ body{
     font-style: regular;
 }
 
-img{display: block;
-max-width: 100%;
-height: auto;}
+    .container {width: 900px;
+       margin: 0 auto;}
 
-.container {width: 900px;
-    background-color: lightcoral;
-/*-- цвет потом нужно убрать--*/
-margin: 0 auto;}
-/* сюда можно будет вставить параметризацию- (сделать по высоте контента).site-logo{display: inline-block:} */
 
-/*.page-header {margin-bottom: 92 px;*/
-.main-menu
+
+.navigation-list
 {text-transform: uppercase;
 list-style: none;
 line-height: 17px;
-display: inline-block;
-text-align: center;
-border: 0;
-}
-.main-menu li{display: inline-block;}
-.main-menu li:not(:last-child){
-margin-right: 60px;}
-
-
-.main-menu a{color: #626262;
-    text-decoration: none;
-    display: block;
- }
-.main-menu a:hover 
-.main-menu a: :focus {color:#80d3f8;}
-
-
-.title {font-style: light;
-    font-family: 'Ubuntu', sans-serif;
-text-transform: uppercase;
-font-style: light;
-}
-.title p 
-{margin-bottom: 28px;
-margin-top: 28px;}
-
-.article-list {list-style: none;
 margin: 0;
 padding: 0;
-font-size: 0px;}
-.article-list h3{font-size: 30px;
+font-size: 0; 
+text-align: center;
+}
+
+.navigation-list a
+{color: #626262;
+    text-decoration: none;
+    font-size: 14px;
+ }
+.navigation-list a:hover {color:#80d3f8;}
+
+.page-header {padding-top: 5px;
+    padding-bottom: 5px;}
+.navigation-item {display: inline-block;
+    margin-right: 80px;
+}
+.navigation-item:last-child {margin-right: 0;}
+.navigation-link {display: inline-block;}
+
+.article-list {
+       margin: 0;
+padding: 0;
+font-size: 0;}
+
+.article-list-item {display: inline-block;
+    width: 420px;
+    margin: 0;
+    margin-bottom: 0;
+    font-size: 0;
+}
+
+.article-list-item:not(:nth-child(2n)){
+    margin-right: 60px;}
+
+    /*.article-list-item p {font-size: 14px;}*/
+    
+.subtitle {font-style: light;
+    font-family: 'Ubuntu', sans-serif;
+text-transform: uppercase;
+font-style: light; font-size: 14px;
+margin: 0;
+margin-bottom: 20px;
+}
+.article-list {list-style: none;}
+.name-of-text {font-size: 30px;
     line-height: 36px;
-margin-bottom: 32px;/*замер по макету 40 пх-лайн хайт h3(36-30)/2- line-height article(24-14)/2 */}
+font-family: "Playfair display";
+margin: 0;
+margin-bottom: 20px;}
 
-    .article-list-item {
-        display: inline-block;
-        width: 421px;
-        font-size: 14px;
-    margin-right: 27px; 
-    /*тут должнобыть 30 пикселей, но 30 пикселей 
-    рвет - не помещается потому что картинки не обрезаны и 
-    эйджент-юзер маржины на страницу выставил авто параметры */
-    text-alight: right;
-    padding: 10;
-    }
-    .article-list-item: nth-child(2n) {margin-right: 0;}
+    .text {font-size: 14px;
+    line-height: 17px;
+font-family: "playfair display";
+margin: 0;}
 
-    .download-bottom {text-align: center;
-        background-position: center;
-        border: none;
-        margin: 0;
-        padding: 16px 30px;
-        /*min-width: 152px;
-        height: 68px;*/
-        background-color: aqua;
+
+.download-button {text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    min-width: 152px;
+    height: 50px;
+    background-color: transparent ;
         font-size: 20px;
-        line-height: 24px;
-        text-transform: uppercase;
+    line-height: 24px;
         cursor: pointer;
-    }  /*не центрируется - не знаю, почему*/
+        
+}
+.download-button:hover {color: slateblue;
+cursor: pointer;
+background-color: yellow;}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -101,5 +109,4 @@ input[type="ratio"].visually-hidden {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+    overflow: hidden;}
