@@ -1,6 +1,6 @@
 
 html{
-    box-siizing:border-box;
+    box-sizing:border-box;
 }
 *,
 *::before,
@@ -16,8 +16,6 @@ body{
 
     .container {width: 900px;
        margin: 0 auto;}
-
-
 
 .navigation-list
 {text-transform: uppercase;
@@ -47,19 +45,22 @@ text-align: center;
 .article-list {
        margin: 0;
 padding: 0;
-font-size: 0;}
+font-size: 0;
+margin-bottom: 70px;}
 
 .article-list-item {display: inline-block;
     width: 420px;
     margin: 0;
     margin-bottom: 0;
     font-size: 0;
+    vertical-align: top
 }
 
-.article-list-item:not(:nth-child(2n)){
+.article-list-item:not(:nth-child(2n)) {
     margin-right: 60px;}
-
-    /*.article-list-item p {font-size: 14px;}*/
+    .article-list-item:nth-child(n-2) {
+        margin-bottom: 20px;
+    }
     
 .subtitle {font-style: light;
     font-family: 'Ubuntu', sans-serif;
