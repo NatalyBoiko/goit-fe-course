@@ -1,0 +1,228 @@
+html {box-sizing: border-box;}
+
+*,
+*::before,
+::after {box-sizing: inherit;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}*
+
+a {text-decoration: none;}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}*/
+
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+    height: auto;
+}
+
+/*HEADER*/
+.navigationclass {
+    padding: 33px 0;
+}
+
+.logo {
+    display: inline-block;
+    font-family: "roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #515151;
+    /*
+    display: flex;
+    float: left;*/
+    text-align: left;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: auto;    
+}
+
+
+.logotext::first-letter {
+    color: #1abc9c;
+font-weight: 700;
+}
+
+.navigation-menu {
+    text-align: right;
+    width: 92%; /*сюда хочу формулу, в которой от ширины родителя1110px отнимаеся ширина logo*/
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+.navigation-item {
+    display: inline-block;
+    }
+
+.navigation-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navigation-link {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: #000;
+    }
+
+.navigation-link:hover,
+.navigation-link:focus {
+    color: #1abc9c;
+    }
+
+/*FIRST SEcTION*/
+.feautured_products {
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-size: 40px;
+    color: #515151;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text::after {
+    display: block;
+    content: " ";
+    width: 140px;
+    height: 4px;
+    background-color: #1abc9c;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.product-list {
+        margin: 80px 0 80px 0;
+    padding: 0;
+    
+}
+
+.product-item {
+    width: 255px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #323232;    
+    line-height: 32px;
+       font-weight: 900;
+    
+}
+.product-item:not(:nth-child(4n)) {
+    margin-right: 26px;
+}
+.product-item:hover,
+.product-item:focus {
+    background-color: #19bb9b;
+}
+
+.name-item {
+    display: inline-block;
+    width: 200px;
+    margin: 0;
+                }
+
+.price {
+    display: inline-block;
+    width: 50px;
+    margin: 0;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+
+/*SECTION NEWS*/
+.name-item {
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+.news-item {
+    display: inline-block;
+    font-family: "Open Sans";
+    width: 350px;
+
+}
+.news-item:not(:nth-child(3n)) {
+    margin-right: 24px;
+}
+    .undertext {
+        width: 325px;
+                font-size: 18px;
+        letter-spacing: 0px;
+        line-height: 26px;
+        color: #555252;
+        font-family: "Open Sans";
+        font-weight: 600;
+    
+}
+.text-line::after {
+    display: block;
+    content: " ";
+    width: 160px;
+    height: 4px;
+    background-color: #1abc9c;
+    margin: 0;
+    margin-top: 20px;}
+
+    .underline {        
+font-size: 14px;
+letter-spacing: 0px;
+line-height: 26px;
+color: #555252;
+font-family: "Open Sans";
+font-weight: 400;
+    }
+
+    /*.bottom-link {width: 160px;
+        height: 51px;
+        border-radius: 3px;
+        filter: drop-shadow(1px 1.732px 2.5px rgba(0,0,0,0.39));
+        background-color: #4ec6ab;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+}*/
+
+    .link_bottom {       
+font-size: 16px;
+letter-spacing: 0px;
+line-height: 26px;
+color: #ffffff;
+font-family: "Open Sans";
+font-weight: 300;
+width: 160px;
+        height: 50px;
+        border-radius: 3px;
+        filter: drop-shadow(1px 1.732px 2.5px rgba(0,0,0,0.39));
+        background-color: #4ec6ab;
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+    }
+    
+    
+
+    
